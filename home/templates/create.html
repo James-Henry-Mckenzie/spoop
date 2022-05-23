@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Create new list {% endblock%}
+
+
+{% block content %} 
+Create Name 
+<form method="post", action="create">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="save">Create New</button>
+    <hr>
+    <p>{{ name }} you wanted {{ number_1 }} + {{ number_2 }} which is {{ number_3}} </p>
+    
+</form>
+{% endblock%}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python button script</title>
+    </head>
+    <body>
+        <button onclick="location.href='{% url 'script' %}'">Execute Script</button><hr>
+        {% if data and stuff%}
+        {{data}}<p>Current Time</p>
+        <br>
+        {{stuff}}<p>Second + 1</p>
+        <br>
+        {{program}}<p>Program</p>
+        {% endif %}
+        <hr>
+        <p><a href="poop">click</a> go to poop</p>
+    </body>
+</html>
